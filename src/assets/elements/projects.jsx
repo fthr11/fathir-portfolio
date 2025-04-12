@@ -74,7 +74,7 @@ const Projects = () => {
                         <img className="h-[132px] md:h-[430px]" src="./public/gallery/logo3.png"/>
                         
                     </div>
-                    <img src="public/gallery/design2.png"/>
+                    <img src="./public/gallery/design2.png"/>
 
                     <div className="flex flex-row w-full">
                         <img className="h-[124px] md:h-[415px]" src="./public/gallery/design3.png"/>
