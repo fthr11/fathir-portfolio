@@ -82,7 +82,7 @@ const Projects = () => {
                         <img className="h-[124px] md:h-[415px]" src="./public/gallery/design4.png"/>  
                     </div>
                     
-                    <img src="public/gallery/design2.1.png" alt="" />
+                    <img src="./public/gallery/design2.1.png" alt="" />
 
                     <div className="flex flex-row w-full">
                         <img className="h-[144px] md:h-[480px]" src="./public/gallery/design2.2.png"/>
