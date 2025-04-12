@@ -1,0 +1,14 @@
+/* styles.css */
+@keyframes parallax {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-parallax {
+    animation: parallax 3s ease-in-out infinite alternate;
+  }
+  
