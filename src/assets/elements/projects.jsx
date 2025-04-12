@@ -50,7 +50,7 @@ const Projects = () => {
                         <i class="ri-tailwind-css-fill text-blue-400 text-3xl"></i>,
                         <img className="w-6" src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg"/>
                     ]}
-                    src = {"public/gallery/Project1.png"}/>
+                    src = {"./public/gallery/Project1.png"}/>
                 <ProjectImage 
                     outputRange={[200,0]}
                     title = {"MY EARTH"} 
