@@ -7,7 +7,7 @@ const About = () => {
         <div className="self-center md:flex md:flex-col md:py-0 ">
           <SlideScroll className={"text-4xl md:text-6xl font-bold"} direction="x" outputRange={[-100,0]}>About Me</SlideScroll>
           <SlideScroll className={"border border-white w-[120px] h-[2px] mt-2 md:mt-5 mb-2 md:mb-5"} delay={1} outputRange={[-100,0]}></SlideScroll>
-          <FadeScroll><img src="/public/gallery/pic2.png" className="w-full md:w-[450px] max-w-full grayscale mt-10 hover:grayscale-0 ease-in-out duration-300 " /></FadeScroll>
+          <FadeScroll><img src="./public/gallery/pic2.png" className="w-full md:w-[450px] max-w-full grayscale mt-10 hover:grayscale-0 ease-in-out duration-300 " /></FadeScroll>
         </div>
 
         <div className="self-center md:items-start">

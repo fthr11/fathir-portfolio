@@ -6,7 +6,7 @@ import './index.css'
 const root = document.getElementById('root');
 
 ReactDOM.createRoot(root).render(
-  <HashRouter>
+  <HashRouter basename={import.meta.env.BASE_}>
     <Routes>
       <Route path = "/" element = {<MainPage/>}/>
     </Routes>
