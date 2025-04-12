@@ -50,7 +50,7 @@ const Projects = () => {
                         <i class="ri-tailwind-css-fill text-blue-400 text-3xl"></i>,
                         <img className="w-6" src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg"/>
                     ]}
-                    src = {"public/gallery/Project1.png"}/>
+                    src = {"/public/gallery/Project1.png"}/>
                 <ProjectImage 
                     outputRange={[200,0]}
                     title = {"MY EARTH"} 
@@ -61,7 +61,7 @@ const Projects = () => {
                         <i class="ri-javascript-fill text-yellow-300 text-3xl"></i>,
 
                     ]}
-                    src = {"public/gallery/Project2.png"}/>
+                    src = {"/public/gallery/Project2.png"}/>
             </div>
             
             <SlideScroll className={"flex flex-col  justify-center items-center min-w-full text-xl md:text-2xl mt-30 mb-20"} direction="y" outputRange={[-60,0]} delay={.7}> Graphics Design Projects </SlideScroll>
@@ -69,24 +69,24 @@ const Projects = () => {
             <div className="min-w-full gap-4 md:gap-0">
                 <FadeScroll >
                     <div className="flex flex-row w-full">
-                        <img className="h-[132px] md:h-[430px]" src="public/gallery/logo1.png"/>
-                        <img className="h-[132px] md:h-[430px]" src="public/gallery/logo2.png"/>
-                        <img className="h-[132px] md:h-[430px]" src="public/gallery/logo3.png"/>
+                        <img className="h-[132px] md:h-[430px]" src="/public/gallery/logo1.png"/>
+                        <img className="h-[132px] md:h-[430px]" src="/public/gallery/logo2.png"/>
+                        <img className="h-[132px] md:h-[430px]" src="/public/gallery/logo3.png"/>
                         
                     </div>
-                    <img src="public/gallery/design2.png"/>
+                    <img src="/public/gallery/design2.png"/>
 
                     <div className="flex flex-row w-full">
-                        <img className="h-[124px] md:h-[415px]" src="public/gallery/design3.png"/>
-                        <img className="h-[124px] md:h-[415px]" src="public/gallery/design1.png"/>
-                        <img className="h-[124px] md:h-[415px]" src="public/gallery/design4.png"/>  
+                        <img className="h-[124px] md:h-[415px]" src="/public/gallery/design3.png"/>
+                        <img className="h-[124px] md:h-[415px]" src="/public/gallery/design1.png"/>
+                        <img className="h-[124px] md:h-[415px]" src="/public/gallery/design4.png"/>  
                     </div>
                     
-                    <img src="public/gallery/design2.1.png" alt="" />
+                    <img src="/public/gallery/design2.1.png" alt="" />
 
                     <div className="flex flex-row w-full">
-                        <img className="h-[144px] md:h-[480px]" src="public/gallery/design2.2.png"/>
-                        <img className="h-[144px] md:h-[480px]" src="public/gallery/design2.3.png"/>
+                        <img className="h-[144px] md:h-[480px]" src="/public/gallery/design2.2.png"/>
+                        <img className="h-[144px] md:h-[480px]" src="/public/gallery/design2.3.png"/>
                     </div>
                 </FadeScroll>
             </div>
