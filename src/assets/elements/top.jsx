@@ -21,7 +21,7 @@ const Top = ({ }) => {
         transition={{ duration: 1.5 }}
         className="md:pl-45 pt-30 md:pt-20 flex justify-center"
       >
-        <img src="media/profile-pic.png" className="w-[300px] md:w-[450px]" />
+        <img src="public/gallery/profile-pic.png" className="w-[300px] md:w-[450px]" />
       </motion.div>
 
       <div className="pb-30 md:py-0 text-5xl absolute md:text-[100px] font-bold text-left md:pt-55 md:leading-24">

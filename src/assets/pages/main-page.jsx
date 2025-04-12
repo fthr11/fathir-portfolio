@@ -9,7 +9,7 @@ import "./main.css";
 
 const MainPage = () => {
     return (
-      <div className="flex flex-col bg-[#090909] min-h-screen">
+      <div className="flex flex-col bg-[#090909] min-h-screen ">
         <Navbar />
         <Top />
         <About />

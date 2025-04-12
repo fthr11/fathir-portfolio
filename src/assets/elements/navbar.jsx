@@ -2,15 +2,23 @@ import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
 
 const NavItems = ({ children, href, onClick }) => {
+  const handleClick = (e) => {
+    e.preventDefault(); // Hindari default behavior <a>
+    const target = document.getElementById(href.replace("#", ""));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+    if (onClick) onClick(); // Tutup mobile nav jika perlu
+  };
+
   return (
     <motion.div className="group relative inline-block">
-      <a
-        href={href}
-        onClick={onClick}
+      <button
+        onClick={handleClick}
         className="text-white relative after:content-[''] after:absolute after:right-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full"
       >
         {children}
-      </a>
+      </button>
     </motion.div>
   );
 };
@@ -31,7 +39,7 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  
+
   return (
     <div
       className={`w-screen fixed z-20 px-6 md:px-45 text-white transition-all duration-300 ${
