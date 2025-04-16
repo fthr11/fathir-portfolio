@@ -6,8 +6,6 @@ import SlideDown from "./animation/slide-down";
 
 
 
-
-
 const Top = ({ }) => {
   return (
     <div
@@ -21,7 +19,7 @@ const Top = ({ }) => {
         transition={{ duration: 1.5 }}
         className="md:pl-45 pt-30 md:pt-20 flex justify-center"
       >
-        <img src="./public/gallery/profile-pic.png" className="w-[300px] md:w-[450px]" />
+        <img src="./public/gallery/profile-pic.png" className="w-[300px] md:w-[450px] md:pb-20" />
       </motion.div>
 
       <div className="pb-30 md:py-0 text-5xl absolute md:text-[100px] font-bold text-left md:pt-55 md:leading-24">
@@ -36,7 +34,7 @@ const Top = ({ }) => {
       {/* Right Side - Text Content */}
       <div className="pt-10 md:w-1/2 justify-center md:pt-20">
         <div className="text-center md:text-end flex flex-col gap-2 md:gap-10">
-          <p className="text-2xl md:text-5xl font-semibold">
+          <div className="text-2xl md:text-5xl font-semibold">
             <div className="hidden md:block">
               <SlideLeft duration={1}>Frontend Developer and</SlideLeft>
               <SlideLeft duration={1} delay={0.2}>
@@ -50,16 +48,16 @@ const Top = ({ }) => {
             <SlideDown delay={.3} className={"md:hidden tracking-widest text-xl mt-10md:hidden"}>
                 Frontend Developer and Graphics Designer
             </SlideDown>
-          </p>
+          </div>
 
-          <p className="hidden md:block text-xl md:text-2xl font-normal mt-4">
+          <div className="hidden md:block text-xl md:text-2xl font-normal mt-4">
             <SlideLeft duration={1} delay={0.8}>
               Developing innovative solutions at the
             </SlideLeft>
             <SlideLeft duration={1} delay={1}>
               intersection of creativity and technology.
             </SlideLeft>
-          </p>
+          </div>
 
           <SlideDown duration={2} delay={.4} className="md:hidden mt-4">
             Passionately developing innovative solutions at the dynamic intersection of creativity and technology,  

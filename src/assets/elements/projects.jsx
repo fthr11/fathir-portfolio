@@ -1,5 +1,21 @@
 import SlideScroll from "./animation/slide-scroll";
 import FadeScroll from "./animation/fade-scroll";
+// image import
+import logo1 from "/gallery/logo1.png";
+import logo2 from "/gallery/logo2.png";
+import logo3 from "/gallery/logo2.png";
+
+import design1 from "/gallery/design1.png";
+import design2 from "/gallery/design2.png";
+import design3 from "/gallery/design3.png";
+import design4 from "/gallery/design4.png"
+import design21 from "/gallery/design2.1.png";
+import design22 from "/gallery/design2.2.png";
+import design23 from "/gallery/design2.3.png";
+
+import project1 from "/gallery/Project1.png";
+import project2 from "/gallery/Project2.png";
+
 
 const ProjectImage = ({ src, title, description, tools, outputRange }) => {
     return (
@@ -12,7 +28,9 @@ const ProjectImage = ({ src, title, description, tools, outputRange }) => {
                         <p className="text-2xl font-semibold mb-2">{title}</p>
                         <p className="font-normal text-lg text-center w-full max-w-[400px]">{description}</p>
                         <div className="flex gap-3 mt-4 flex-wrap justify-center">
-                            {tools}
+                        {tools.map((tool, index) => (
+                            <span key={index}>{tool}</span>
+                        ))}
                         </div>
                     </div>
 
@@ -46,22 +64,22 @@ const Projects = () => {
                     title = {"Clothes."} 
                     description={"it's an e-commerce that provides a lot of modern clothing."}
                     tools={[
-                        <i class="ri-reactjs-fill text-blue-500 text-3xl"></i>,
-                        <i class="ri-tailwind-css-fill text-blue-400 text-3xl"></i>,
+                        <i className="ri-reactjs-fill text-blue-500 text-3xl"></i>,
+                        <i className="ri-tailwind-css-fill text-blue-400 text-3xl"></i>,
                         <img className="w-6" src="https://cdn.worldvectorlogo.com/logos/framer-motion.svg"/>
                     ]}
-                    src = {"./public/gallery/Project1.png"}/>
+                    src = {project1}/>
                 <ProjectImage 
                     outputRange={[200,0]}
                     title = {"MY EARTH"} 
                     description={"It's a website that provides information about the earth."} 
                     tools={[
-                        <i class="ri-html5-fill text-orange-500 text-3xl"></i>,
-                        <i class="ri-css3-fill text-blue-400 text-3xl"></i>,
-                        <i class="ri-javascript-fill text-yellow-300 text-3xl"></i>,
+                        <i className="ri-html5-fill text-orange-500 text-3xl"></i>,
+                        <i className="ri-css3-fill text-blue-400 text-3xl"></i>,
+                        <i className="ri-javascript-fill text-yellow-300 text-3xl"></i>,
 
                     ]}
-                    src = {"./public/gallery/Project2.png"}/>
+                    src = {project2}/>
             </div>
             
             <SlideScroll className={"flex flex-col  justify-center items-center min-w-full text-xl md:text-2xl mt-30 mb-20"} direction="y" outputRange={[-60,0]} delay={.7}> Graphics Design Projects </SlideScroll>
@@ -69,24 +87,23 @@ const Projects = () => {
             <div className="min-w-full gap-4 md:gap-0">
                 <FadeScroll >
                     <div className="flex flex-row w-full">
-                        <img className="h-[132px] md:h-[430px]" src="./public/gallery/logo1.png"/>
-                        <img className="h-[132px] md:h-[430px]" src="./public/gallery/logo2.png"/>
-                        <img className="h-[132px] md:h-[430px]" src="./public/gallery/logo3.png"/>
-                        
+                        <img className="h-[132px] md:h-[430px]" src={logo1}/>
+                        <img className="h-[132px] md:h-[430px]" src={logo2}/>
+                        <img className="h-[132px] md:h-[430px]" src={logo3}/>
                     </div>
-                    <img src="./public/gallery/design2.png"/>
+                    <img src={design2}/>
 
                     <div className="flex flex-row w-full">
-                        <img className="h-[124px] md:h-[415px]" src="./public/gallery/design3.png"/>
-                        <img className="h-[124px] md:h-[415px]" src="./public/gallery/design1.png"/>
-                        <img className="h-[124px] md:h-[415px]" src="./public/gallery/design4.png"/>  
+                        <img className="h-[124px] md:h-[415px]" src={design3}/>
+                        <img className="h-[124px] md:h-[415px]" src={design1}/>
+                        <img className="h-[124px] md:h-[415px]" src={design4}/>  
                     </div>
                     
-                    <img src="./public/gallery/design2.1.png" alt="" />
+                    <img src={design21}/>
 
                     <div className="flex flex-row w-full">
-                        <img className="h-[144px] md:h-[480px]" src="./public/gallery/design2.2.png"/>
-                        <img className="h-[144px] md:h-[480px]" src="./public/gallery/design2.3.png"/>
+                        <img className="h-[144px] md:h-[480px]" src={design22}/>
+                        <img className="h-[144px] md:h-[480px]" src={design23}/>
                     </div>
                 </FadeScroll>
             </div>

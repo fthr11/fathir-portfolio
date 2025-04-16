@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 
 const NavItems = ({ children, href, onClick }) => {
   const handleClick = (e) => {
-    e.preventDefault(); // Hindari default behavior <a>
+    e.preventDefault(); 
     const target = document.getElementById(href.replace("#", ""));
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
-    if (onClick) onClick(); // Tutup mobile nav jika perlu
+    if (onClick) onClick(); 
   };
 
   return (
@@ -68,10 +68,10 @@ const Navbar = () => {
             key="mobile-menu"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
-            exit={false}
+            exit={{height: 0, opacity: 0}}
             transition={{
               duration: 0.4,
-              ease: [0.25, 0.8, 0.25, 1],
+              ease: [0.25, 0.8, 0.25, 1], 
             }}
             className="overflow-hidden flex flex-col w-full justify-center items-center gap-8 text-md md:hidden"
           >

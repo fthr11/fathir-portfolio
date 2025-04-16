@@ -2,6 +2,7 @@ import FadeScroll from "./animation/fade-scroll";
 import SlideScroll from "./animation/slide-scroll";
 
 const About = () => {
+
     return (
       <div id="about" className="flex flex-wrap flex-row justify-between px-11 py-20 md:px-60 z-10 md:py-40 text-white font-montserrat">
         <div className="self-center md:flex md:flex-col md:py-0 ">
