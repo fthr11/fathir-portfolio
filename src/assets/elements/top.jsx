@@ -3,6 +3,7 @@ import SlideRight from "./animation/slide-right";
 import SlideLeft from "./animation/slide-left";
 import { motion } from "motion/react"
 import SlideDown from "./animation/slide-down";
+import pic1 from "/gallery/profile-pic.png"
 
 
 
@@ -19,7 +20,7 @@ const Top = ({ }) => {
         transition={{ duration: 1.5 }}
         className="md:pl-45 pt-30 md:pt-20 flex justify-center"
       >
-        <img src="./public/gallery/profile-pic.png" className="w-[300px] md:w-[450px] md:pb-20" />
+        <img src={pic1} className="w-[300px] md:w-[450px] md:pb-20" />
       </motion.div>
 
       <div className="pb-30 md:py-0 text-5xl absolute md:text-[100px] font-bold text-left md:pt-55 md:leading-24">

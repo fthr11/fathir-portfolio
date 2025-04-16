@@ -17,7 +17,7 @@ const Footer = () => {
                 <p className="text-sm md:text-xl">Follow me</p>
                 <a href="https://www.instagram.com/fthr11._" className="text-xs md:text-base mt-10 hover:underline">Instagram</a>
                 <a href="https://www.linkedin.com/in/fathir-rahman-305137325/" className="text-xs md:text-base mt-2 hover:underline">LinkedIn</a>
-                <a href="" className="text-xs md:text-base mt-2 hover:underline">Facebook</a>
+                <a href="https://github.com/fthr11" className="text-xs md:text-base mt-2 hover:underline">GitHub</a>
                 <p className="text-[10px] font-light mt-10">@2025 Fathir Rahman Rabbani</p>
             </div>
         </div>
