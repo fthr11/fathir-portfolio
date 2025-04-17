@@ -18,22 +18,22 @@ const Top = ({ }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="md:pl-45 pt-30 md:pt-20 flex justify-center"
+        className="md:pl-45 pt-30 md:pt-20 relative md:flex justify-center"
       >
-        <img src={pic1} className="w-[300px] md:w-[450px] md:pb-20" />
+        <img src={pic1} className="w-[250px] md:w-[450px] md:pb-20" />
       </motion.div>
 
-      <div className="pb-30 md:py-0 text-5xl absolute md:text-[100px] font-bold text-left md:pt-55 md:leading-24">
+      <div className="pb-10 px-2 md:py-0 text-[40px] absolute md:text-[100px] font-bold text-left md:pt-55 md:leading-24">
           <div className="flex flex-row gap-4 md:flex-col ">
             <SlideUp>Fathir</SlideUp>
             <SlideUp delay={0.2}>Rahman</SlideUp>
           </div>
         
-          <SlideRight className="absolute border-t-4 border-white w-[100px] ml-1 mt-2 md:mt-8 md:ml-2" />
+          <SlideRight className="absolute border-t-4 border-white w-[100px] ml-1 md:mt-8 md:ml-2" />
       </div>
 
       {/* Right Side - Text Content */}
-      <div className="pt-10 md:w-1/2 justify-center md:pt-20">
+      <div className="md:w-1/2 justify-center md:pt-20">
         <div className="text-center md:text-end flex flex-col gap-2 md:gap-10">
           <div className="text-2xl md:text-5xl font-semibold">
             <div className="hidden md:block">
@@ -46,7 +46,7 @@ const Top = ({ }) => {
               </SlideLeft>
             </div> 
 
-            <SlideDown delay={.3} className={"md:hidden tracking-widest text-xl mt-10md:hidden"}>
+            <SlideDown delay={.3} className={"md:hidden tracking-[3px] text-xs md:text-xl"}>
                 Frontend Developer and Graphics Designer
             </SlideDown>
           </div>
@@ -60,7 +60,7 @@ const Top = ({ }) => {
             </SlideLeft>
           </div>
 
-          <SlideDown duration={2} delay={.4} className="md:hidden mt-4">
+          <SlideDown duration={2} delay={.4} className="px-5 md:px-0 md:hidden md:mt-4 text-sm">
             Passionately developing innovative solutions at the dynamic intersection of creativity and technology,  
             where cutting-edge ideas meet practical implementation to shape the future of digital experiences.
           </SlideDown>

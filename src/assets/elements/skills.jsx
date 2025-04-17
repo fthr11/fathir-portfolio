@@ -22,6 +22,7 @@ const Skills = () => {
                 <img className="h-8 md:h-14"src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png" alt="" />
                 <img className="h-8 md:h-14"src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png" alt="" />
                 <img className="h-6 md:h-12"src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1200px-Figma-logo.svg.png" alt="" />
+                <img className="h-6 md:h-12"src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="" />
             </SlideScroll>
         </div>
     )
