@@ -11,7 +11,7 @@ const Top = ({ }) => {
   return (
     <div
       id="hero"
-      className="flex flex-wrap justify-center md:justify-between flex-row bg-gradient-to-r from-[#2E2E2E] to-[#000000] min-h-screen items-center text-white px-6 md:px-60 font-montserrat"
+      className="flex flex-wrap flex-row justify-center overflow-hidden z-10  md:justify-between bg-gradient-to-r from-[#2E2E2E] to-[#000000] min-h-screen items-center text-white px-6 md:px-60 font-montserrat"
     >
       {/* Left Side - Image */}
       <motion.div

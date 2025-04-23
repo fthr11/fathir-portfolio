@@ -3,8 +3,6 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import MainPage from './assets/pages/main-page';
 import './index.css'
 
-console.log(import.meta.env.BASE_URL);
-
 const root = document.getElementById('root');
 
 ReactDOM.createRoot(root).render(

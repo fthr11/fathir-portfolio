@@ -11,7 +11,7 @@ const NavItems = ({ children, href, onClick}) => {
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      // Jika posisi scroll mendekati target (dengan toleransi 10px)
+      // Jika posisi scroll mendekati target (dengan toleransi 1px)
       if (Math.abs(scrollPosition - targetOffset) < 1) {
         window.removeEventListener("scroll", handleScroll);
         if (onClick) onClick(); // Tutup navbar
@@ -35,7 +35,7 @@ const NavItems = ({ children, href, onClick}) => {
 };
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false); //untuk mengecek apakah halaman telah di scroll
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -77,12 +77,12 @@ const Navbar = () => {
         {isOpen && (
           <motion.ul
             key="mobile-menu"
-            initial={{ height: 0, opacity: 0 }}
+            initial={{ height: 0, opacity: 1 }}
             animate={{ height: "auto", opacity: 1 }}
-            exit={{height: 0, opacity: 0}}
+            exit={{height: 0, opacity: 1}}
             transition={{
-              duration: 0.4,
-              ease: [0.25, 0.8, 0.25, 1], 
+              duration: .4,
+              
             }}
             className="overflow-hidden flex flex-col w-full justify-center items-center gap-8 text-md mt-4 md:hidden"
           >

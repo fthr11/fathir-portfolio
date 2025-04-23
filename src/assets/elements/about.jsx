@@ -12,8 +12,8 @@ const About = () => {
         </div>
 
         <div className="self-center md:items-start">
-          <SlideScroll className="text-xl md:text-3xl font-semibold mt-10 md:pt-20 pb-4 text-center md:text-left" direction="y" inputRange={[0, .4]} outputRange={[40,0]}>Fathir Rahman Rabbani</SlideScroll>
-          <SlideScroll className="text-sm md:text-xl text-justify font-light md:w-[720px]" direction="y" inputRange={[0, .4]} outputRange={[90,0]} delay={1} outputOpacity={[0,1.5,1,1]}>Hey there i’am Fathir Rahman rabbani, i’am an undergraduate Computer and Informatics Engineering student in Jakarta State Polytechnic, I am a passionate Frontend Developer, UI/UX Design, and Graphics Design with a strong foundation in Computer and Informatics Engineering. 
+          <SlideScroll className="text-xl md:text-3xl font-semibold mt-10 md:pt-20 pb-4 text-center md:text-left" direction="y" inputRange={[0, .4]} outputRange={[80,0] } outputOpacity={[0,.3,.5,1]}>Fathir Rahman Rabbani</SlideScroll>
+          <SlideScroll className="text-sm md:text-xl text-justify font-light md:w-[720px]" direction="y" inputRange={[0, .4]} outputRange={[100,0]} delay={1} outputOpacity={[0,.6,.8,1]}>Hey there i’am Fathir Rahman rabbani, i’am an undergraduate Computer and Informatics Engineering student in Jakarta State Polytechnic, I am a passionate Frontend Developer, UI/UX Design, and Graphics Design with a strong foundation in Computer and Informatics Engineering. 
           With hands-on experience in building responsive, high-performance web applications, I specialize in creating intuitive user interfaces that enhance user experience and engagement.</SlideScroll>
         </div>
       </div>
