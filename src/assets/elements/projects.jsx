@@ -88,8 +88,8 @@ const Column = ({images, y=0}, ) => {
         <motion.div id="column" style={{y}} className="flex flex-col gap-1 md:gap-4 relative" >
             {
                 images.map((src,index) => (  
-                    <LazyLoad>
-                        <div key={index} className="relative min-h-[150px] md:h-[600px] w-[95px] md:w-[350px]">
+                    <LazyLoad key={index} height={150} offset={100}>
+                        <div  className="relative min-h-[150px] md:h-[600px] w-[95px] md:w-[350px]">
                             <img className="w-full h-[150px] md:h-full object-cover rounded-sm md:rounded-lg"
                                 src = {src} 
                                 alt = "image"
@@ -110,6 +110,7 @@ const Projects = () => {
                 <SlideScroll className={"text-2xl md:text-6xl "} direction="x" outputRange={[-100,0]}>My Projects</SlideScroll>
                 <SlideScroll className={"border border-white w-[100px] md:w-[190px] h-[2px] mt-2 md:mt-5"} outputRange={[-100,0]} delay={1}></SlideScroll>
             </div>
+
             <ScrollProject/>
             <ScrollProjectResponsive/>
         </main>
