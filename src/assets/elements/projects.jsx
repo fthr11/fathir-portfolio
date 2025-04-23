@@ -110,7 +110,6 @@ const Projects = () => {
                 <SlideScroll className={"text-2xl md:text-6xl "} direction="x" outputRange={[-100,0]}>My Projects</SlideScroll>
                 <SlideScroll className={"border border-white w-[100px] md:w-[190px] h-[2px] mt-2 md:mt-5"} outputRange={[-100,0]} delay={1}></SlideScroll>
             </div>
-
             <ScrollProject/>
             <ScrollProjectResponsive/>
         </main>
