@@ -17,6 +17,7 @@
     "motion": "^12.6.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-lazyload": "^3.2.1",
     "react-router-dom": "^7.4.1",
     "react-scroll": "^1.9.3",
     "tailwind-scrollbar-hide": "^2.0.0",

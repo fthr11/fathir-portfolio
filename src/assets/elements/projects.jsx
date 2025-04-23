@@ -1,6 +1,7 @@
 import SlideScroll from "./animation/slide-scroll";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
+import LazyLoad from "react-lazyload"
 import "./project.css"
 
 import logo1 from "/gallery/logo1.png";
@@ -76,7 +77,7 @@ const ScrollProjectResponsive = () => {
                 <Column images = {[imagesData[0], imagesData[3], imagesData[6]]} y = {y1}/>
                 <Column images = {[imagesData[7], imagesData[2], imagesData[8]]} y = {y2}/>
                 <Column images = {[imagesData[9], imagesData[10], imagesData[11]]} y = {y3}/>
-                <Column images = {[imagesData[1], imagesData[2], imagesData[3]]} y = {y4}/>
+                <Column images = {[imagesData[8], imagesData[11], imagesData[9]]} y = {y4}/>
             </div>
         </div>
     )
@@ -87,12 +88,15 @@ const Column = ({images, y=0}, ) => {
         <motion.div id="column" style={{y}} className="flex flex-col gap-1 md:gap-4 relative" >
             {
                 images.map((src,index) => (  
-                    <div key={index} className="relative min-h-[150px] md:h-[600px] w-[95px] md:w-[350px]">
-                        <img className="w-full h-full object-cover rounded-sm md:rounded-lg"
-                            src = {src} 
-                            alt = "image"
-                        />       
-                    </div>
+                    <LazyLoad>
+                        <div key={index} className="relative min-h-[150px] md:h-[600px] w-[95px] md:w-[350px]">
+                            <img className="w-full h-[150px] md:h-full object-cover rounded-sm md:rounded-lg"
+                                src = {src} 
+                                alt = "image"
+                                loading="lazy"
+                            />       
+                        </div>
+                    </LazyLoad>                   
                 )) 
             }
         </motion.div>
