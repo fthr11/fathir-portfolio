@@ -1,6 +1,6 @@
 import FadeScroll from "./animation/fade-scroll";
 import SlideScroll from "./animation/slide-scroll";
-import pic2 from "/gallery/pic2.png";
+import pic2 from "/gallery/pic2.webp";
 
 const About = () => {
     return (

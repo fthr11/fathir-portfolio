@@ -14,4 +14,6 @@
     &:nth-of-type(4){
         top:-80%
     }
+
+    will-change: transform;
 }

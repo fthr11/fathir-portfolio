@@ -1,23 +1,23 @@
 import SlideScroll from "./animation/slide-scroll";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
-import LazyLoad from "react-lazyload"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import "./project.css"
 
-import logo1 from "/gallery/logo1.png";
-import logo2 from "/gallery/logo2.png";
-import logo3 from "/gallery/logo3.png";
+import logo1 from "/gallery/logo1.webp";
+import logo2 from "/gallery/logo2.webp";
+import logo3 from "/gallery/logo3.webp";
 
-import design1 from "/gallery/design1.png";
-import design2 from "/gallery/design2.png";
-import design3 from "/gallery/design3.png";
-import design4 from "/gallery/design4.png"
-import design21 from "/gallery/design2.1.png";
-import design22 from "/gallery/design2.2.png";
-import design23 from "/gallery/design2.3.png";
+import design1 from "/gallery/design1.webp";
+import design2 from "/gallery/design2.webp";
+import design3 from "/gallery/design3.webp";
+import design4 from "/gallery/design4.webp"
+import design21 from "/gallery/design2.1.webp";
+import design22 from "/gallery/design2.2.webp";
+import design23 from "/gallery/design2.3.webp";
 
-import project1 from "/gallery/Project1.png";
-import project2 from "/gallery/Project2.png"; 
+import project1 from "/gallery/Project1.webp";
+import project2 from "/gallery/Project2.webp"; 
 
 
 const imagesData = [
@@ -85,18 +85,19 @@ const ScrollProjectResponsive = () => {
 
 const Column = ({images, y=0}, ) => {
     return (
-        <motion.div id="column" style={{y}} className="flex flex-col gap-1 md:gap-4 relative" >
+        <motion.div id="column" style={{y, transform: "translate3d(0, 0, 0)"}} className="flex flex-col gap-1 md:gap-4 relative" >
             {
                 images.map((src,index) => (  
-                    <LazyLoad key={index} height={150} offset={100}>
+                    <div key={index} >
                         <div  className="relative min-h-[150px] md:h-[600px] w-[95px] md:w-[350px]">
-                            <img className="w-full h-[150px] md:h-full object-cover rounded-sm md:rounded-lg"
-                                src = {src} 
-                                alt = "image"
-                                loading="lazy"
-                            />       
+                            <img
+                                loading="eager"
+                                className="w-full h-[150px] md:h-full object-cover rounded-sm md:rounded-lg"
+                                src={src} 
+                                alt="image"
+                            />
                         </div>
-                    </LazyLoad>                   
+                    </div>                   
                 )) 
             }
         </motion.div>

@@ -3,7 +3,7 @@ import SlideRight from "./animation/slide-right";
 import SlideLeft from "./animation/slide-left";
 import { motion } from "motion/react"
 import SlideDown from "./animation/slide-down";
-import pic1 from "/gallery/profile-pic.png"
+import pic1 from "/gallery/profile-pic.webp"
 
 
 
